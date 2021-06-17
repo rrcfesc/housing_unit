@@ -1,0 +1,4 @@
+scripts:
+  bash: kool exec -- --user=www-data web bash
+  composer: kool exec -- --user=www-data web composer
+  npm: kool exec -- --user=www-data web npm

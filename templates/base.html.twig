@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+        <meta content="no-cache" http-equiv="Pragma"/>
+        <title>{% block title %}{{ 'welcome' | trans |capitalize  }}{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>

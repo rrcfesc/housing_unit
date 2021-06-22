@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -17,5 +18,13 @@ final class GuestController extends AbstractController
     public function index(): Response
     {
         return $this->render('guest/index.html.twig', []);
+    }
+
+    /**
+     * @Route("/contact", name="contact", methods={"POST"})
+     */
+    public function contact(Request $request)
+    {
+
     }
 }

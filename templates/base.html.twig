@@ -7,13 +7,19 @@
         <title>{% block title %}{{ 'welcome' | trans |capitalize  }}{% endblock %}</title>
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+        {% endblock %}d
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
     <body>
+        {% block header %}
+            {{ include('sections/guest/header.html.twig') }}
+        {% endblock %}
         {% block body %}{% endblock %}
+        {% block footer %}
+            {{ include('sections/guest/footer.html.twig') }}
+        {% endblock %}
     </body>
 </html>

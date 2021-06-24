@@ -1,0 +1,20 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo">
+            <a href="{{ path('guest_index') }}" class="logo"><img src="{{ asset('images/logo.png') }}" alt="Logo Terranostra" class="img-fluid"></a>
+        </h1>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">{{ 'home' | trans | capitalize }}</a></li>
+                <li><a class="nav-link scrollto" href="#about">{{ 'about' | trans | capitalize }}</a></li>
+                <li><a class="nav-link scrollto" href="#rent-sell">{{ 'rents' | trans | capitalize }} - {{ 'sell' | trans | capitalize }}</a></li>
+                <li><a class="nav-link scrollto" href="#team">{{ 'team' | trans | capitalize }}</a></li>
+                <li><a class="nav-link scrollto" href="#contact">{{ 'contact' | trans | capitalize }}</a></li>
+                <li><a class="getstarted scrollto" href="{{ path('admin_index') }}">{{ 'owners' | trans | capitalize }}</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
